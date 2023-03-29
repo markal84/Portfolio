@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 function NavBar() {
   return (
     <nav>
-      <ul>
+      <ul className="NavList">
         {navLinks.map((link, i) => {
           const { name, href } = link;
           return (
-            <li className="nav-list--link" key={i}>
+            <li className="NavList--link" key={i}>
               <Link to={href}>{name}</Link>
             </li>
           );

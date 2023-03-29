@@ -7,6 +7,7 @@ export const navLinks = [
 
 export const projects = [
   {
+    id: 1,
     name: 'Test Project1',
     stack: 'Technological stack used',
     screen: 'Here will be link to image, put it in src',
@@ -17,6 +18,7 @@ export const projects = [
     },
   },
   {
+    id: 2,
     name: 'Test Project2',
     stack: 'Technological stack used',
     screen: 'Here will be link to image, put it in src',
