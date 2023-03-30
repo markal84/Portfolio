@@ -1,7 +1,16 @@
-/* Helper classess */
-/* Navigation */
-.NavList {
-  display: inline-flex;
+:root {
+  background-color: #f5f7fa;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 .App {

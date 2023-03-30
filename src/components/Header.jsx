@@ -1,4 +1,4 @@
-import NavBar from './Navigation';
+import NavBar from './Navbar';
 
 function Header() {
   return <NavBar />;
