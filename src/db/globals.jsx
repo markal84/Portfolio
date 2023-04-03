@@ -10,7 +10,7 @@ export const projects = [
     id: 1,
     name: 'Test Project1',
     stack: 'Technological stack used',
-    screen: 'Here will be link to image, put it in src',
+    image: 'images/project1_screenshot.webp',
     desc: 'Test Project1 description',
     links: {
       live: 'Live link href',
@@ -21,7 +21,7 @@ export const projects = [
     id: 2,
     name: 'Test Project2',
     stack: 'Technological stack used',
-    screen: 'Here will be link to image, put it in src',
+    image: 'images/project1_screenshot.webp',
     desc: 'Test Project2 description',
     links: {
       live: 'Live link href',
