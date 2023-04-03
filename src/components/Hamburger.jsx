@@ -10,18 +10,23 @@ export default function Hamburger() {
     setOpenMenu(!openMenu);
   }
 
-  const drawerWidth = '40vw';
+  const drawerWidth = '300px';
 
   return (
     <>
-      <Drawer sx={{ width: 240 }} anchor="right" open={openMenu} onClose={() => toggleOpenMenu(false)}>
+      <Drawer
+        PaperProps={{ sx: { width: drawerWidth } }}
+        anchor="right"
+        open={openMenu}
+        onClose={() => toggleOpenMenu(false)}
+      >
         <List>
           {navLinks.map((link, i) => {
             const { name, href } = link;
             return (
               <div key={i}>
                 <ListItem onClick={() => toggleOpenMenu(false)}>
-                  <ListItemText>
+                  <ListItemText sx={{ textAlign: 'center' }}>
                     <Link to={href}>{name}</Link>
                   </ListItemText>
                 </ListItem>
