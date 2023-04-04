@@ -1,5 +1,5 @@
 import { navLinks } from '../db/globals';
-import { AppBar, Toolbar, Container, Stack, Button, CssBaseline, useTheme, useMediaQuery } from '@mui/material';
+import { AppBar, Toolbar, Container, Stack, Button, useTheme, useMediaQuery } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
 
@@ -11,7 +11,6 @@ function NavBar() {
     <nav>
       <AppBar position="static">
         <Container maxWidth="lg">
-          <CssBaseline />
           <Toolbar>
             {isMobile ? (
               <Hamburger />

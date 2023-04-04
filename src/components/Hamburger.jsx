@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Drawer, List, ListItem, ListItemText, Divider, IconButton } from '@mui/material';
+import SocialIcons from './SocialIcons';
+import { Drawer, List, ListItem, ListItemText, Divider, IconButton, Button } from '@mui/material';
 import { navLinks } from '../db/globals';
 import { Menu } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
@@ -27,7 +28,9 @@ export default function Hamburger() {
               <div key={i}>
                 <ListItem onClick={() => toggleOpenMenu(false)}>
                   <ListItemText sx={{ textAlign: 'center' }}>
-                    <Link to={href}>{name}</Link>
+                    <Button sx={{ width: '100%' }} variant="text" component={Link} to={href}>
+                      {name}
+                    </Button>
                   </ListItemText>
                 </ListItem>
                 <Divider />
@@ -35,6 +38,7 @@ export default function Hamburger() {
             );
           })}
         </List>
+        <SocialIcons />
       </Drawer>
       <IconButton onClick={() => setOpenMenu(!openMenu)}>
         <Menu />
