@@ -2,6 +2,7 @@ import { navLinks } from '../db/globals';
 import { AppBar, Toolbar, Container, Stack, Button, useTheme, useMediaQuery } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
+import NightModeToggle from '../components/ThemeToggler';
 
 function NavBar() {
   const theme = useTheme();
@@ -11,7 +12,7 @@ function NavBar() {
     <nav>
       <AppBar position="static">
         <Container maxWidth="lg">
-          <Toolbar>
+          <Toolbar sx={{ justifyContent: 'space-between' }}>
             {isMobile ? (
               <Hamburger />
             ) : (
@@ -26,6 +27,7 @@ function NavBar() {
                 })}
               </Stack>
             )}
+            <NightModeToggle />
           </Toolbar>
         </Container>
       </AppBar>

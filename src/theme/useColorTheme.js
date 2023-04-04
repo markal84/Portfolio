@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material';
 import { useState, useMemo } from 'react';
-import theme, { getDesignTokens } from './theme';
+import { getDesignTokens } from './theme';
 
 export function useColorTheme() {
   const [mode, setMode] = useState('light');

@@ -1,8 +1,8 @@
-import { amber, deepOrange, grey } from '@mui/material/colors';
+import { deepPurple, deepOrange, grey } from '@mui/material/colors';
 
 const theme = {
   palette: {
-    primary: amber,
+    primary: deepPurple,
   },
 };
 
@@ -11,11 +11,11 @@ export const getDesignTokens = (mode) => ({
     mode,
     ...(mode === 'light'
       ? {
-          primary: amber,
-          divider: amber[200],
+          primary: deepPurple,
+          divider: deepPurple[200],
           text: {
-            primary: grey[900],
-            secondary: grey[800],
+            primary: '#fff',
+            secondary: grey[500],
           },
         }
       : {

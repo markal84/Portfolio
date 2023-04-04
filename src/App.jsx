@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import { Unstable_Grid2, CssBaseline, ThemeProvider } from '@mui/material';
-import NightModeToggle from './components/ThemeToggler';
 import { useThemeContext } from './theme/ThemeContextProvider';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -19,7 +18,6 @@ function App() {
       <CssBaseline />
       <div className="App">
         <Header />
-        <NightModeToggle />
         <Unstable_Grid2 container justifyContent="center">
           <Routes>
             <Route path="/" element={<Home />} />
