@@ -16,7 +16,7 @@ export default function Hamburger() {
   return (
     <>
       <Drawer
-        PaperProps={{ sx: { width: drawerWidth } }}
+        PaperProps={{ sx: { width: drawerWidth, justifyContent: 'space-between' } }}
         anchor="right"
         open={openMenu}
         onClose={() => toggleOpenMenu(false)}

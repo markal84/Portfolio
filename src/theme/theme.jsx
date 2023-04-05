@@ -1,8 +1,8 @@
-import { deepPurple, deepOrange, grey } from '@mui/material/colors';
+import { purple, deepOrange, grey } from '@mui/material/colors';
 
 const theme = {
   palette: {
-    primary: deepPurple,
+    primary: purple,
   },
 };
 
@@ -11,12 +11,8 @@ export const getDesignTokens = (mode) => ({
     mode,
     ...(mode === 'light'
       ? {
-          primary: deepPurple,
-          divider: deepPurple[200],
-          text: {
-            primary: '#fff',
-            secondary: grey[500],
-          },
+          primary: purple,
+          divider: purple[200],
         }
       : {
           primary: deepOrange,
@@ -27,7 +23,7 @@ export const getDesignTokens = (mode) => ({
           },
           text: {
             primary: '#fff',
-            secondary: grey[500],
+            secondary: grey[200],
           },
         }),
   },

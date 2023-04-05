@@ -1,6 +1,7 @@
 import { createTheme } from '@mui/material';
 import { createContext, useContext } from 'react';
 import { useColorTheme } from './useColorTheme';
+import { PropTypes } from 'prop-types';
 
 export const ThemeContext = createContext({
   mode: 'light',
@@ -15,4 +16,8 @@ export const ThemeContextProvider = ({ children }) => {
 
 export const useThemeContext = () => {
   return useContext(ThemeContext);
+};
+
+ThemeContextProvider.propTypes = {
+  children: PropTypes.object,
 };

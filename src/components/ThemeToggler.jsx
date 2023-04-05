@@ -1,4 +1,4 @@
-import { Box, IconButton } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { useThemeContext } from '../theme/ThemeContextProvider';
@@ -15,9 +15,9 @@ const NightModeToggle = () => {
         color: 'text.primary',
       }}
     >
-      {mode} mode
-      <IconButton sx={{ ml: 1 }} onClick={toggleColor} color="inherit">
-        {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+      <IconButton size="small" sx={{ ml: 1, mr: 1 }} onClick={toggleColor} color="inherit">
+        {mode !== 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+        <Typography sx={{ ml: 1 }}>{mode} mode</Typography>
       </IconButton>
     </Box>
   );

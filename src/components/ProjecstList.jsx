@@ -1,16 +1,28 @@
 import Project from './Project';
 import PropTypes from 'prop-types';
-import { Unstable_Grid2 } from '@mui/material';
+import { Grid } from '@mui/material';
 
 function ProjectsList(props) {
   return (
-    <Unstable_Grid2 xs={12} md={6} spacing={2} direction="row">
+    <Grid container justifyContent="center" direction="row" sx={{ mt: 2, mb: 1 }}>
       {props.cards.map((card) => {
-        const { id, name, stack, desc, image } = card;
+        const { id, name, desc, image } = card;
         const { live, code } = card.links;
-        return <Project key={id} name={name} stack={stack} desc={desc} live={live} code={code} image={image} />;
+        const { frontend, backend } = card.stack;
+        return (
+          <Project
+            key={id}
+            name={name}
+            frontend={frontend}
+            backend={backend}
+            desc={desc}
+            live={live}
+            code={code}
+            image={image}
+          />
+        );
       })}
-    </Unstable_Grid2>
+    </Grid>
   );
 }
 

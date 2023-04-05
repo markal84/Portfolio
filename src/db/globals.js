@@ -9,12 +9,15 @@ export const projects = [
   {
     id: 1,
     name: 'Test Project1',
-    stack: 'Technological stack used',
+    stack: {
+      frontend: 'React, Typescript, MeterialUI',
+      backend: 'Node.js, express',
+    },
     image: 'images/project1_screenshot.webp',
     desc: 'Test Project1 description',
     links: {
-      live: 'Live link href',
-      code: 'Code link href',
+      live: 'https://github.com',
+      code: 'https://github.com',
     },
   },
   {
@@ -24,8 +27,8 @@ export const projects = [
     image: 'images/project1_screenshot.webp',
     desc: 'Test Project2 description',
     links: {
-      live: 'Live link href',
-      code: 'Code link href',
+      live: 'https://github.com',
+      code: 'https://github.com',
     },
   },
 ];
