@@ -5,11 +5,11 @@ import { GitHub, LinkedIn } from '@mui/icons-material';
 
 export default function SocialIcons() {
   return (
-    <Box sx={{ marginBottom: 2 }}>
-      <BottomNavigation showLabels>
+    <Box mt={4} mb={2} justifyContent="center">
+      <BottomNavigation showLabels sx={{ backgroundColor: 'transparent', width: '30%', margin: '0 auto' }}>
         <BottomNavigationAction
           label="Github"
-          icon={<GitHub />}
+          icon={<GitHub fontSize="large" />}
           component={Link}
           to="https://github.com/markal84"
           target="_blank"
@@ -17,7 +17,7 @@ export default function SocialIcons() {
         />
         <BottomNavigationAction
           label="LinkedIn"
-          icon={<LinkedIn />}
+          icon={<LinkedIn fontSize="large" />}
           component={Link}
           to="https://www.linkedin.com/in/marcin-kaleta/"
           target="_blank"

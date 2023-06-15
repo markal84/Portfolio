@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SocialIcons from './SocialIcons';
 import { Drawer, List, ListItem, ListItemText, Divider, IconButton, Button } from '@mui/material';
 import { navLinks } from '../db/globals';
 import { Menu } from '@mui/icons-material';
@@ -38,7 +37,6 @@ export default function Hamburger() {
             );
           })}
         </List>
-        <SocialIcons />
       </Drawer>
       <IconButton onClick={() => setOpenMenu(!openMenu)}>
         <Menu />

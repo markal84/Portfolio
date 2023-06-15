@@ -4,7 +4,7 @@ import { Grid } from '@mui/material';
 
 function ProjectsList(props) {
   return (
-    <Grid container justifyContent="center" direction="row" sx={{ mt: 2, mb: 1 }}>
+    <Grid id="projects" component="section" container justifyContent="center" direction="row" sx={{ mt: 2, mb: 1 }}>
       {props.cards.map((card) => {
         const { id, name, desc, image } = card;
         const { live, code } = card.links;
