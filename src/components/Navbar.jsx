@@ -9,9 +9,9 @@ function NavBar() {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   const logoStyle = {
-    fontWeight: '600',
+    fontWeight: '500',
     textDecoration: 'none',
-    color: '#2d2e32',
+    color: '#2196f3',
     transition: 'color 0.3s',
   };
 

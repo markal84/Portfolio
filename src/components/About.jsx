@@ -48,7 +48,7 @@ export default function About() {
       <div style={aboutContainer}>
         <div style={aboutContent}>
           <div style={aboutText}>
-            <Typography variant="h6" sx={aboutParagraph} textAlign="center">
+            <Typography variant="h5" sx={aboutParagraph} textAlign="center">
               Hi, I&apos;m Marcin. A passionate Web Developer based in Cracow, Poland.
             </Typography>
             <Box mt={2} mb={2}>
@@ -59,18 +59,18 @@ export default function About() {
                 <span>Node</span>, <span>Express</span>, <span>MongoDB</span>
               </Stack>
               <Stack stackName="Tools">
-                <span>Git</span>, <span>Bash</span>, <span>Windows</span>
+                <span>Git</span>, <span>Bash</span>, <span>Windows</span>, <span>ChatGPT(3.5)</span>
               </Stack>
               <Stack stackName="Learning">
                 <span>Docker</span>, <span>Next.js</span>, <span>Typescript</span>
               </Stack>
             </Box>
-            <Box>
-              <SocialIcons />
+            <Box display="flex" justifyContent="flex-start">
+              <SocialIcons size="large" />
             </Box>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="center" mt={2}>
               <Link href="#projects" color="inherit" underline="none">
-                <Typography>My Projects</Typography>
+                <Typography variant="h6">See my Projects</Typography>
               </Link>
             </Box>
           </div>
