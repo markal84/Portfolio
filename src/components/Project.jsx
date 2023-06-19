@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import { Card, CardContent, CardActions, CardMedia, Button, Typography, Link } from '@mui/material';
 
 function Project(props) {
-  const { name, desc, live, code, image, frontend, backend } = props;
+  const { name, desc, live, code, image, frontend, backend, fullDesc } = props;
 
   return (
-    <Card sx={{ width: 550, minWidth: 300, marginTop: 2, marginBottom: 3, marginLeft: 1, marginRight: 1 }}>
-      <CardMedia component="img" alt={name} height="240" image={image} />
+    <Card sx={{ width: 375, minWidth: 300, marginTop: 2, marginBottom: 3, marginLeft: 1, marginRight: 1 }}>
+      <CardMedia component="img" alt={name} height="297" src={image} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {name}
@@ -18,6 +18,9 @@ function Project(props) {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {desc}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {fullDesc}
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: 'space-evenly' }}>
