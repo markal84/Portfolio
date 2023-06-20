@@ -53,7 +53,7 @@ export default function About() {
             </Typography>
             <Box mt={2} mb={2}>
               <Stack stackName="Frontend">
-                <span>JavaScript</span>, <span>React</span>
+                <span>JavaScript</span>, <span>TypeScript</span>, <span>React</span>
               </Stack>
               <Stack stackName="Backend">
                 <span>Node.js</span>, <span>Express</span>, <span>MongoDB</span>
@@ -62,7 +62,7 @@ export default function About() {
                 <span>Git</span>, <span>Bash</span>, <span>ChatGPT(3.5)</span>, <span>Postman</span>
               </Stack>
               <Stack stackName="Learning">
-                <span>Docker</span>, <span>Next.js</span>, <span>Typescript</span>
+                <span>Docker</span>, <span>Next.js</span>, <span>Unix-like environments</span>
               </Stack>
             </Box>
             <Box display="flex" justifyContent="flex-start">
