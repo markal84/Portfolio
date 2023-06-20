@@ -33,14 +33,14 @@ function Project(props) {
       <CardActions sx={{ justifyContent: 'space-evenly' }}>
         <Button size="small">
           <Typography>
-            <Link underline="none" color="inherit" href={live} alt={name}>
+            <Link underline="none" color="inherit" href={live} alt={name} target="_blank">
               live demo
             </Link>
           </Typography>
         </Button>
         <Button size="small">
           <Typography>
-            <Link underline="none" color="inherit" href={code} alt={name}>
+            <Link underline="none" color="inherit" href={code} alt={name} target="_blank">
               code
             </Link>
           </Typography>

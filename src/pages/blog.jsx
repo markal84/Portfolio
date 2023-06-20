@@ -1,8 +1,15 @@
+import SectionContainer from '../components/SectionContainer';
+import { Typography } from '@mui/material';
+
+const blogStyle = {
+  marginTop: '65px',
+};
+
 function Blog() {
   return (
-    <div>
-      <h1>This is the blog page</h1>
-    </div>
+    <SectionContainer sectionId="blog" sectionStyle={blogStyle}>
+      <Typography variant="h5">Coming soon...</Typography>
+    </SectionContainer>
   );
 }
 
