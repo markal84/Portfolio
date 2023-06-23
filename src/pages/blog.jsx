@@ -1,5 +1,6 @@
 import SectionContainer from '../components/SectionContainer';
-import { Typography } from '@mui/material';
+import { blogArticles } from '../db/blogArticles';
+import BlogList from '../components/BlogList';
 
 const blogStyle = {
   marginTop: '65px',
@@ -8,7 +9,7 @@ const blogStyle = {
 function Blog() {
   return (
     <SectionContainer sectionId="blog" sectionStyle={blogStyle}>
-      <Typography variant="h5">Coming soon...</Typography>
+      <BlogList articles={blogArticles} />
     </SectionContainer>
   );
 }

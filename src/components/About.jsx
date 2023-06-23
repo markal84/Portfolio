@@ -59,7 +59,8 @@ export default function About() {
                 <span>Node.js</span>, <span>Express</span>, <span>MongoDB</span>
               </Stack>
               <Stack stackName="Tools">
-                <span>Git</span>, <span>Bash</span>, <span>ChatGPT(3.5)</span>, <span>Postman</span>
+                <span>Git</span>, <span>Postman</span>, <span>Jest</span>, <span>Vitest</span>, <span>Cypress</span>,{' '}
+                <span>ChatGPT(3.5)</span>,
               </Stack>
               <Stack stackName="Learning">
                 <span>Docker</span>, <span>Next.js</span>, <span>Unix-like environments</span>
