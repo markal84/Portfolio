@@ -4,11 +4,13 @@ import { useState } from 'react';
 
 const RootCard = styled(Card)({
   marginBottom: '20px',
+  maxWidth: '650px',
 });
 
 const FlexContainer = styled('div')({
   display: 'flex',
   alignItems: 'center',
+  marginBottom: '1rem',
 });
 
 const DateText = styled(Typography)({
@@ -56,8 +58,8 @@ export default function BlogArticle(props) {
   };
 
   return (
-    <Grid item xs={12} sm={10} md={8}>
-      <RootCard>
+    <Grid component="article" item xs={12} sm={10} md={8}>
+      <RootCard elevation={0}>
         <CardContent>
           <FlexContainer>
             <DateText>{date}</DateText>
@@ -65,7 +67,9 @@ export default function BlogArticle(props) {
           </FlexContainer>
           <TitleText>{title}</TitleText>
           <DescriptionText>{desc}</DescriptionText>
-          <Typography variant="subtitle2">Summary:</Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            What I learned:
+          </Typography>
           <SummaryText>{summary}</SummaryText>
           <Collapse in={expanded}>
             <FullDescriptionText>{fullDesc}</FullDescriptionText>
