@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import BlogArticle from './BlogArticle';
-import { Grid, Pagination, PaginationItem, Link } from '@mui/material';
+import { Grid, Pagination, PaginationItem, Link, Box } from '@mui/material';
 
 export default function BlogList(props) {
   const { articles } = props;
@@ -40,12 +40,14 @@ export default function BlogList(props) {
           />
         );
       })}
-      <Pagination
-        count={totalPages}
-        page={currentPage}
-        onChange={handlePageChange}
-        renderItem={(item) => <PaginationItem component={Link} to={`/blogs?page=${item.page}`} {...item} />}
-      />
+      <Box display="flex" justifyContent="center" sx={{ width: '100%' }}>
+        <Pagination
+          count={totalPages}
+          page={currentPage}
+          onChange={handlePageChange}
+          renderItem={(item) => <PaginationItem component={Link} to={`/blogs?page=${item.page}`} {...item} />}
+        />
+      </Box>
     </Grid>
   );
 }
