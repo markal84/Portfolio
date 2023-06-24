@@ -5,8 +5,8 @@ function Project(props) {
   const { name, desc, live, code, image, frontend, backend, features } = props;
 
   return (
-    <Card sx={{ width: 375, minWidth: 300, marginTop: 2, marginBottom: 3, marginLeft: 1, marginRight: 1 }}>
-      <CardMedia component="img" alt={name} height="297" src={image} />
+    <Card sx={{ maxWidth: 600, minWidth: 300, marginTop: 2, marginBottom: 3, marginLeft: 1, marginRight: 1 }}>
+      <CardMedia component="img" alt={name} height="437" src={image} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {name}
