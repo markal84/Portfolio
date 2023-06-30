@@ -3,8 +3,7 @@ export const navLinks = [
   { name: 'Blog', href: 'blog' },
   {
     name: 'CV',
-    href: 'https://drive.google.com/file/d/1sb27Qqncx4U2lYkq0ySH759OzOD4vGfV/view?usp=sharing',
-    target: '_blank',
+    href: 'cv',
   },
 ];
 
