@@ -8,7 +8,7 @@ const cvStyle = {
 function Cv() {
   return (
     <SectionContainer sectionId="cv" sectionStyle={cvStyle}>
-      <Typography variant="h5">Dowonload CV</Typography>
+      <Typography variant="h5">CV not avaiable when in preview mode</Typography>
     </SectionContainer>
   );
 }
