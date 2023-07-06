@@ -1,8 +1,15 @@
+import SectionContainer from '../components/SectionContainer';
+import { Typography } from '@mui/material';
+
+const cvStyle = {
+  marginTop: '65px',
+};
+
 function Cv() {
   return (
-    <div>
-      <h1>This is the CV page</h1>
-    </div>
+    <SectionContainer sectionId="cv" sectionStyle={cvStyle}>
+      <Typography variant="h5">CV not avaiable in preview mode</Typography>
+    </SectionContainer>
   );
 }
 

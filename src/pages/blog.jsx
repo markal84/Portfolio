@@ -1,8 +1,16 @@
+import SectionContainer from '../components/SectionContainer';
+import { blogArticles } from '../db/blogArticles';
+import BlogList from '../components/BlogList';
+
+const blogStyle = {
+  marginTop: '65px',
+};
+
 function Blog() {
   return (
-    <div>
-      <h1>This is the blog page</h1>
-    </div>
+    <SectionContainer sectionId="blog" sectionStyle={blogStyle}>
+      <BlogList articles={blogArticles} />
+    </SectionContainer>
   );
 }
 

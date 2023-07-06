@@ -34,9 +34,9 @@ function NavBar() {
             ) : (
               <Stack direction="row" spacing={2} justifyContent="flex-start">
                 {navLinks.map((link, i) => {
-                  const { name, href } = link;
+                  const { name, href, target } = link;
                   return (
-                    <Button component={Link} to={href} color="inherit" key={i} sx={linkstyles}>
+                    <Button component={Link} to={href} target={target} color="inherit" key={i} sx={linkstyles}>
                       {name}
                     </Button>
                   );

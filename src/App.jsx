@@ -23,7 +23,7 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="learning" element={<Learning />} />
           <Route path="cv" element={<Cv />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

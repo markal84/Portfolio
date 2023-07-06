@@ -1,10 +1,19 @@
-/* eslint-disable react/prop-types */
 import { Container } from '@mui/material';
 
-export default function SectionContainer({ sectionId = '', sectionStyle = '', children }) {
+const sectionContainer = {
+  alignItems: 'center',
+  display: 'flex',
+  gap: '10rem',
+  justifyContent: 'center',
+  position: 'relative',
+};
+
+export default function SectionContainer({ sectionId = '', sectionStyle = {}, children }) {
   return (
     <section id={sectionId} style={sectionStyle}>
-      <Container maxWidth="xl">{children}</Container>
+      <Container maxWidth="xl" sx={sectionContainer}>
+        {children}
+      </Container>
     </section>
   );
 }
